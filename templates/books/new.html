@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New Book</title>
+</head>
+<body>
+    <h1>Создать книгу</h1>
+
+    <form action="/books" method="post">
+        <div>
+            <label>Название:</label>
+            <input type="text" name="title" required>
+        </div>
+
+        <div>
+            <label>Автор:</label>
+            <input type="text" name="author" required>
+        </div>
+
+        <div>
+            <label>Год издания:</label>
+            <input type="number" name="year" required>
+        </div>
+
+        <div>
+            <label>Количество страниц:</label>
+            <input type="number" name="total_pages" required>
+        </div>
+
+        <div>
+            <label>Жанр:</label>
+            <input type="text" name="genre" required>
+        </div>
+
+        <br>
+        <button type="submit">Сохранить</button>
+    </form>
+
+    <br>
+    <a href="/books">Назад к списку</a>
+</body>
+</html>
